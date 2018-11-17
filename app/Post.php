@@ -11,7 +11,7 @@ class Post extends Model
 
     //This function makes the relation between post and category so a post belongs to
     // a catgory
-    public function catgory()
+    public function category()
     {
         return $this->belongsTo(Category::class);
     }
