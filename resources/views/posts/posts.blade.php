@@ -7,5 +7,8 @@
         {{ $post->excerpt }}
         {{ $post->body }}
         {{ $post->created_at }}
+        @foreach($post->tags as $tag)
+            {{ $tag->name}}
+        @endforeach
     @endforeach
 @endsection
